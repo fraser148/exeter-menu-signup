@@ -59,7 +59,8 @@ const Home: NextPage = () => {
             <Formik
               initialValues={{ email : ""}}
               onSubmit = { async (values : { email: string }, actions) => {
-                let res = await fetch(process.env.API_LEAD + "/api/emails", {
+                let route = [process.env.API_LEAD, "/api/emails"].join('')
+                let res = await fetch(route, {
                     method: "POST",
                     body: JSON.stringify({
                       email : values.email
