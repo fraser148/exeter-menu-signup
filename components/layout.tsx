@@ -18,8 +18,8 @@ export default function Layout({ children } : { children : ReactNode }) {
             {children}
         </Container>
         <Box bgGradient='linear(to-l, orange.400, orange.500)' p={2} color={"white"} >
-            <Text mx={10}>If you have any problems, just email <Link href='mailto:fraser.rennie@exeter.ox.ac.uk' isExternal textDecor={"underline"}>
-            fraser.rennie@exeter.ox.ac.uk<ExternalLinkIcon mx='2px' />
+            <Text mx={10}>If you have any problems, just email <Link href='mailto:menu@exeter.oxtickets.co.uk' isExternal textDecor={"underline"}>
+            menu@exeter.oxtickets.co.uk<ExternalLinkIcon mx='2px' />
             </Link>
             </Text>
         </Box>
