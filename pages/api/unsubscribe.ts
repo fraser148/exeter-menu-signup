@@ -26,8 +26,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       let bodyObject = JSON.parse(req.body);
       bodyObject.timeStamp = toIsoString(new Date())
       const query = { email: bodyObject.email };
-      await db.collection("unsub").insertOne(bodyObject);
       let unsub = await db.collection("emails").deleteOne(query)
+      if (unsub.deletedCount > 0) {
+        await db.collection("unsub").insertOne(bodyObject);
+      }
       res.json(unsub);
       break;
   }
