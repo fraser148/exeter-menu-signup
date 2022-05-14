@@ -44,8 +44,8 @@ const Unsub: NextPage = () => {
   return (
     <Layout>
         <Head>
-          <title>Exeter Menu Email Signup</title>
-          <meta name="description" content="Receive the Exeter College Oxford Dinner Menu" />
+          <title>Unsubscribe from Menu Sender</title>
+          <meta name="description" content="Unsubscribe from the Exeter College Oxford Dinner Menu" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Container centerContent maxW='container.l' p={0}>
